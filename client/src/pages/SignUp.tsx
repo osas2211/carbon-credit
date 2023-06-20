@@ -7,8 +7,10 @@ import authIcon from "../assets/auth.png"
 import { Select } from "../components/Select"
 import { Link } from "react-router-dom"
 import { Button } from "../components/Button"
+import { useNavigate } from "react-router-dom"
 
 export const SignUp = () => {
+  const navigate = useNavigate()
   const { Title } = Typography
   const projectType: { label: string; value: string }[] = [
     {
@@ -32,6 +34,10 @@ export const SignUp = () => {
       label: "Cook Stove",
     },
   ]
+  const onSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    navigate("on-boarding")
+  }
   return (
     <div className="sign-up">
       <div className="sign-up_image">
@@ -44,7 +50,7 @@ export const SignUp = () => {
         <p>Greentech Portal</p>
       </div>
       <div className="auth">
-        <form className="auth_form">
+        <form className="auth_form" onSubmit={(e) => onSignUp(e)}>
           <p style={{ fontSize: "20px", color: "#7C7C7C" }}>Welcome</p>
           <Title
             level={3}

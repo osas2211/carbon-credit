@@ -52,6 +52,45 @@
   }
 }
 
+.on-boarding {
+  width: 100%;
+  color: $text-light;
+  padding-top: 163px;
+  position: relative;
+  min-height: 95vh;
+  background-color: #fff;
+
+  small {
+    font-size: 20px;
+    font-weight: 36px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 36px;
+    font-weight: 500;
+  }
+}
+
+.file-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -20;
+}
+.file-input-label {
+  width: 284px;
+  height: 284px;
+  border-radius: 5px;
+  background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media (max-height: 800px) {
   .auth {
     padding-top: 60px;
