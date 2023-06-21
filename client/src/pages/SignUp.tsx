@@ -70,6 +70,7 @@ export const SignUp = () => {
             id="email"
             label="email"
             style={{ marginBottom: 17 }}
+            required
           />
           <div
             style={{

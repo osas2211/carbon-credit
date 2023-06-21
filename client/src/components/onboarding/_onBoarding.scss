@@ -91,6 +91,34 @@
   align-items: center;
 }
 
+.project-details-form {
+  margin: 46px auto;
+  width: 80%;
+  background-color: $bg-light;
+  padding: 50px;
+  border-radius: 5px;
+
+  label,
+  input {
+    color: $text-dark !important;
+    font-weight: 500;
+  }
+}
+
+.tos {
+  font-size: 13px;
+  height: 55vh;
+  width: 80%;
+  margin: auto;
+  overflow-y: scroll;
+  margin-top: 2rem;
+  border: 1px solid #dcdcdc;
+  padding: 0.2rem;
+  p {
+    margin-bottom: 1rem;
+  }
+}
+
 @media (max-height: 800px) {
   .auth {
     padding-top: 60px;

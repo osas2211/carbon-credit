@@ -4,7 +4,7 @@ import eye from "../assets/eye.png"
 export const Input: React.FC<{
   prefix?: string
   suffix?: string
-  type: "email" | "password" | "text"
+  type: "email" | "password" | "text" | "date" | "number"
   style?: React.CSSProperties
   placeholder?: string
   id: string
