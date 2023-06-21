@@ -36,7 +36,7 @@ export const SignUp = () => {
   ]
   const onSignUp = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    navigate("on-boarding")
+    navigate("/on-boarding")
   }
   return (
     <div className="sign-up">
@@ -131,7 +131,7 @@ export const SignUp = () => {
               }}
             >
               Have an account?{" "}
-              <Link to={"sign-in"} style={{ color: "#105a0e" }}>
+              <Link to={"/sign-in"} style={{ color: "#105a0e" }}>
                 Sign In
               </Link>
             </p>

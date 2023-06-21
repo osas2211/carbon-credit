@@ -24,7 +24,17 @@ export const OnBoarding = () => {
             padding: "0 5rem",
           }}
         >
-          <small onClick={() => setStep((step) => step - 1)}>skip</small>
+          {step !== 3 ? (
+            <small onClick={() => setStep((step) => step - 1)}>skip</small>
+          ) : (
+            <p style={{ marginLeft: "3.5rem" }}>
+              <input type="checkbox" name="agree" id="agree" />{" "}
+              <label htmlFor="agree">
+                I agree to the terms and conditions of EcoStack
+              </label>
+            </p>
+          )}
+
           {step !== 3 ? (
             <small onClick={() => setStep((step) => step + 1)}>
               next {">"}
